@@ -12,6 +12,6 @@ class prueba(models.Model):
     description = fields.Text(string="A descripción da Prueba")
 
     def creaRexistroInformacionPrueba(self):
-        creado_id = self.env['odoo_basico.informacion'].create({'name': 'Creado dende pedido'})
+        creado_id = self.env['odoo_basico.informacion'].create({'name': 'Creado dende prueba'})
         creado_id.descripcion = "Creado dende o modelo pedido"
         creado_id.autorizado = False
