@@ -1,0 +1,36 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="prueba_list_action">
+            <field name="name">modulo odoo_basico, modelo prueba</field>
+            <field name="res_model">odoo_basico.prueba</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Tes que crear o 1º Rexistro</p>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="prueba_form_view">
+            <field name="name">odoo_basico.form</field>
+            <field name="model">odoo_basico.prueba</field>
+            <field name="arch" type="xml">
+                <form string="Formulario de prueba">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="prueba_list_view">
+            <field name="name">odoo_basico.list</field>
+            <field name="model">odoo_basico.prueba</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="description"/>
+                </list>
+            </field>
+        </record>
+    </data>
+</odoo>

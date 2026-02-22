@@ -29,6 +29,7 @@ Long description of module's purpose
         'views/persoa.xml',
         'views/menu.xml',
         'views/templates.xml',
+        'views/prueba.xml',
         'accions_planificadas/accion_planificada.xml',
         'reports/report_informacion.xml',
         'reports/report_header.xml',

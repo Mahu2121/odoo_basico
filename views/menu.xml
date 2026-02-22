@@ -2,6 +2,7 @@
     <data>
         <menuitem name="Menú Nivel 0. Odoo Basico" id ="main_odoo_basico" sequence="5"/>
         <menuitem name="Menú Nivel 1. Información" id ="nivel1_informacion" parent="main_odoo_basico"/>
+
         <menuitem name="Menú Nivel 2. Información" id ="nivel2_informacion" parent="nivel1_informacion" />
         <menuitem name="Menú Nivel 2. Información. Gráficas" id ="nivel2_informacion_graficas" parent="nivel1_informacion" />
         <menuitem name="Menú Nivel 3. Información" id ="nivel3_informacion" parent="nivel2_informacion" action="informacion_list_action"/>
@@ -9,7 +10,10 @@
         <menuitem name="Menú Nivel 3. Gráfica Ancho" id ="nivel3_grafica_ancho" parent="nivel2_informacion_graficas" action="informacion_graph_ancho_action"/>
         <menuitem name="Menú Nivel 3. Gráfica Longo" id ="nivel3_grafica_longo" parent="nivel2_informacion_graficas" action="informacion_graph_longo_action"/>
         <menuitem name="Menú Nivel 3. Gráfica Densidade" id ="nivel3_grafica_densidade" parent="nivel2_informacion_graficas" action="informacion_graph_densidade_action"/>
+
         <menuitem name="Menú Nivel 1. Suceso" id ="nivel1_suceso" parent="main_odoo_basico" action="suceso_list_action"/>
         <menuitem name="Menú Nivel 1. Pedidos" id ="nivel1_pedido" parent="main_odoo_basico" action="pedido_list_action"/>
+
+        <menuitem name="Menú Nivel 1 Prueba" id="nivel1_prueba" parent="main_odoo_basico" action="prueba_list_action"/>
     </data>
 </odoo>
