@@ -8,11 +8,16 @@
                 <p class="o_view_nocontent_smiling_face">Tes que crear o 1º Rexistro</p>
             </field>
         </record>
+
         <record model="ir.ui.view" id="prueba_form_view">
             <field name="name">odoo_basico.form</field>
             <field name="model">odoo_basico.prueba</field>
             <field name="arch" type="xml">
                 <form string="Formulario de prueba">
+                    <header>
+                    <button name="creaRexistroInformacionPrueba" type="object"
+                            string="Crear rexistro informacion"/>
+                    </header>
                     <sheet>
                         <group>
                             <field name="name"/>
@@ -22,6 +27,7 @@
                 </form>
             </field>
         </record>
+
         <record model="ir.ui.view" id="prueba_list_view">
             <field name="name">odoo_basico.list</field>
             <field name="model">odoo_basico.prueba</field>
