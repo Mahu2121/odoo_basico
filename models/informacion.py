@@ -62,7 +62,7 @@ class informacion(models.Model):
              rexistro.volume = (float(rexistro.alto_en_cms) * float(rexistro.ancho_en_cms) * float(rexistro.longo_en_cms)) /1000000
              miñasUtilidades.rexistra_log(
                  miñasUtilidades.convirte_data_hora_de_utc_a_timezone_do_usuario(fields.Datetime.now(), self.env.user.tz or 'UTC').strftime("%Y/%m/%d, %H:%M:%S"),
-                 miñasUtilidades.cadeaTextoSegunPlataforma('c:\\users\\antonio\\logs', '/home/antonio/logs'),
+                 miñasUtilidades.cadeaTextoSegunPlataforma('c:\\users\\antonio\\logs', '/home/a24hugogb/logs'),
                  "probaVolume.log",miñasUtilidades.determinaUsuarioSegunContexto(self, rexistro.env.context) + " novo volume " + str(rexistro.volume) + " en " + str(rexistro.descripcion))
                  # miñasUtilidades.determinaUsuarioSegunContexto(self, rexistro.env.context) + " novo volume " + str(
                  #     rexistro.volume))
