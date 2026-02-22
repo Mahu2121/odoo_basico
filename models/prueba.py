@@ -11,4 +11,4 @@ class prueba(models.Model):
     _description = 'modelo para probar o funcionamento de Odoo'
 
     name = fields.Char(required=True, size=20, string="Identificador de Prueba")
-    descripcion = fields.Text(string="A descripción da Prueba")
+    description = fields.Text(string="A descripción da Prueba")
