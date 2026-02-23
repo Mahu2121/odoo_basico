@@ -32,7 +32,7 @@
             <field name="tz">Europe/Madrid</field>
             <field name="login">lectura@odoo.com</field>
             <field name="password">odoo</field>
-            <field name="groups_id" eval="[(6, 0, [ref('odoo_basico.grupo_lectura')])]"/>
+            <field name="groups_id" eval="[(4, 0, [ref('odoo_basico.grupo_lectura')])]"/>
         </record>
         <!--    Se da erro por violar a constraint notification_type con valor null. -->
         <!--    Temos que desinstalar e instalar o módulo para que tome por defecto o valor email, ou asignarlle un valor a email -->
@@ -49,7 +49,7 @@
             <field name="tz">Europe/Madrid</field>
             <field name="login">escritura@odoo.com</field>
             <field name="password">odoo</field>
-            <field name="groups_id" eval="[(6, 0, [ref('odoo_basico.grupo_escritura')])]"/>
+            <field name="groups_id" eval="[(4, 0, [ref('odoo_basico.grupo_escritura')])]"/>
         </record>
     </data>
 </odoo>
