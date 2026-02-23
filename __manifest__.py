@@ -31,6 +31,7 @@ Long description of module's purpose
         'views/menu.xml',
         'views/templates.xml',
         'accions_planificadas/accion_planificada.xml',
+        "accions_planificadas/accion_planificada_informacion.xml",
         'reports/report_informacion.xml',
         'reports/report_header.xml',
         'security/xestion_usuarios.xml',
