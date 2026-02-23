@@ -121,8 +121,6 @@
                         <button name="ver_contexto" type="object" string="Ver Contexto"/>
                         <button name="actualiza_hora_timezone_usuario" type="object"
                                 string="Actualiza Hora a Timezone do Usuario" class="oe_highlight"/>
-                        <!-- Botón para crear factura desde la información -->
-                        <button name="action_crear_factura" type="object" string="Crear factura" class="oe_highlight" groups="account.group_account_invoice"/>
                     </header>
                     <sheet>
                         <group>
