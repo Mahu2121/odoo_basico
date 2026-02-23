@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <!-- Acción planificada para actualizar la hora_timezone_usuario de todos los registros de informacion -->
+        <record model="ir.cron" id="cron_actualiza_hora_informacion">
+            <field name="name">Actualiza hora timezone en informacion</field>
+            <field name="active" eval="True"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">hours</field>
+            <field name="model_id" ref="model_odoo_basico_informacion"/>
+            <field name="state">code</field>
+            <!-- Llama a un método ya implementado en pedido.py que actualiza hora_timezone_usuario -->
+            <field name="code">model.env['odoo_basico.pedido'].actualizadorHoraTimezone()</field>
+        </record>
+    </data>
+</odoo>
+
