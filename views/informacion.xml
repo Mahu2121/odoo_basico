@@ -1,5 +1,7 @@
 <odoo>
     <data>
+
+
         <record model="ir.ui.view" id="informacion_graph_view_alto">
             <field name="name">informacion.grafico</field>
             <field name="model">odoo_basico.informacion</field>
@@ -49,6 +51,9 @@
                 </pivot>
             </field>
         </record>
+
+
+
         <record model="ir.actions.act_window" id="informacion_list_action">
             <field name="name">modulo odoo_basico, modelo informacion</field>
             <field name="res_model">odoo_basico.informacion</field>
@@ -106,7 +111,6 @@
             </field>
         </record>
 
-
         <record model="ir.ui.view" id="informacion_form_view">
             <field name="name">odoo_basico.form</field>
             <field name="model">odoo_basico.informacion</field>
@@ -117,6 +121,8 @@
                         <button name="ver_contexto" type="object" string="Ver Contexto"/>
                         <button name="actualiza_hora_timezone_usuario" type="object"
                                 string="Actualiza Hora a Timezone do Usuario" class="oe_highlight"/>
+                        <!-- Botón para crear factura desde la información -->
+                        <button name="action_crear_factura" type="object" string="Crear factura" class="oe_highlight" groups="account.group_account_invoice"/>
                     </header>
                     <sheet>
                         <group>
