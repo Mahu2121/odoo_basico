@@ -16,3 +16,5 @@ class lineapedido(models.Model):
                                         string="Rexistro de Información",
                                         relation="odoo_basico_lineapedido_informacion",
                                         column1="lineapedido_id", column2="informacion_id")
+
+     

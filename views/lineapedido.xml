@@ -7,6 +7,7 @@
             <p class="o_view_nocontent_smiling_face">Tes que crear o 1º Rexistro</p>
         </field>
     </record>
+
     <record model="ir.ui.view" id="lineapedido_form_view">
         <field name="name">odoo_basico.form</field>
         <field name="model">odoo_basico.lineapedido</field>
